@@ -7,17 +7,16 @@ int main()
         A
         B C
         D E F
-        G H I J 
+        G H I J
        ================================ */
 
     int n = 5;
-    int val = 65;
+    char val = 'A';
     for (int i = 1; i <= n; i++)
     {
         for (int j = 1; j <= i; j++)
         {
-            cout << char(val) << " ";
-            val++;      
+            cout << val++ << " ";
         }
         cout << "\n";
     }

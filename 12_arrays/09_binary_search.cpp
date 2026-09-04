@@ -16,7 +16,7 @@ int binarySearch(int arr[], int size, int key)
         int mid = (st + end) / 2;
         if (arr[mid] == key)
         {
-            cout << st << " " << end << "\n";
+            // cout << st << " " << end << "\n";
             return mid;
         }
         else if (arr[mid] < key)
@@ -28,7 +28,7 @@ int binarySearch(int arr[], int size, int key)
             end = mid - 1;
         }
     }
-    cout << st << " " << end << "\n";
+    // cout << st << " " << end << "\n";
     return -1;
 }
 
@@ -36,7 +36,7 @@ int main()
 {
 
     int nums[] = {11, 12, 15, 16, 17, 18, 19};
-    int target = 14;
+    int target = 11;
     int n = sizeof(nums) / sizeof(nums[0]);
     // cout << n;
 

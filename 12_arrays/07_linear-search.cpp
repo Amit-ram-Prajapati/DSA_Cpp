@@ -1,5 +1,8 @@
 #include <iostream>
 using namespace std;
+
+// ===================== Linear Search algorithm  =====================
+// *** In this, we iterate over all the elements of the array. ***
 int linearSerach(int *arr, int n, int k, bool &f)
 {
     for (int i = 0; i < n; i++)

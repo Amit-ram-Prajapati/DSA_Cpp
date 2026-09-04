@@ -5,14 +5,20 @@ int main()
 {
 
     int marks[6];
+    int n;
 
-    int len = sizeof(marks) / sizeof(int);
-    for (int i = 0; i < len; i++)
+    // int len = sizeof(marks) / sizeof(int);
+    cout << "Enter size of array : ";
+    cin >> n;
+    for (int i = 0; i < n; i++)
+
     {
+        cout << "Enter marks : ";
         cin >> marks[i];
     }
 
-    for (int i = 0; i < len; i++)
+    cout << "Marks are : ";
+    for (int i = 0; i < n; i++)
     {
         cout << marks[i] << " ";
     }

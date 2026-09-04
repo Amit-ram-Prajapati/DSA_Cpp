@@ -1,10 +1,6 @@
 #include <iostream>
 using namespace std;
 
-void printArr(int nums[] ,int n)
-{
-    cout << n;
-}
 int main()
 {
 

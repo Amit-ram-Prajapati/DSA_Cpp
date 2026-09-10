@@ -4,12 +4,13 @@ using namespace std;
 void printSubarray(int arr[], int s)
 
 {
-    int maxSum = INT8_MIN;
+    int maxSum = INT32_MIN;
     int currentSum = 0;
     for (int i = 0; i < s; i++)
     {
         currentSum += arr[i];
         maxSum = max(maxSum , currentSum);
+        // we do reset here becuase if array is negative in that case we will get zero instead a neg number in ans
         if (currentSum < 0)
         {
             currentSum = 0;

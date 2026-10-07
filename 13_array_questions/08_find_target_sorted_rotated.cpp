@@ -9,7 +9,7 @@ int findTarget(int nums[], int s, int key)
     while (st <= end)
     {
         int mid = (st + end) / 2;
-        cout << "run";
+        
         if (nums[mid] == key)
         {
             return mid;
@@ -41,10 +41,10 @@ int findTarget(int nums[], int s, int key)
 int main()
 {
 
-    int arr[] = {4, 5, 6, 7, 0, 1, 2, 3};
+    int arr[] = { 4, 5, 6, 7, 0, 1, 2 };
     int n = sizeof(arr) / sizeof(arr[0]);
     int target = 0;
-    cout << n << "\n";
+    
     cout << findTarget(arr, n, target);
     return 0;
 }
